@@ -10,7 +10,7 @@
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,6 +29,11 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .logo {
+            width: 100px;
+        }
+    </style>
 </head>
 
 <body>
@@ -36,213 +41,271 @@
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
+               
             </div>
         </div>
         <!-- Spinner End -->
 
-
-        <!-- Navbar Start -->
-        <div class="container-fluid nav-bar bg-transparent">
-            <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
-                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
-                    <div class="icon p-2 me-2">
-                        <img class="img-fluid" src="img/icon-deal.png" alt="Icon" style="width: 30px; height: 30px;">
+<!-- Navbar Start -->
+<div class="container-fluid nav-bar bg-transparent">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
+        <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+            <div class="icon p-2 me-2">
+                <img class="logo" src="img/logo.png" alt="Ícone" style="width: 100px; height: 90px;">
+            </div>
+            
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto">
+                <a href="index.html" class="nav-item nav-link active">Início</a>
+                <a href="about.html" class="nav-item nav-link">Sobre</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Imóveis</a>
+                    <div class="dropdown-menu rounded-0 m-0">
+                        <a href="property-list.html" class="dropdown-item">Lista de Imóveis</a>
+                        <a href="property-type.html" class="dropdown-item">Tipo de Imóveis</a>
+                        <a href="property-agent.html" class="dropdown-item">Corretores</a>
                     </div>
-                    <h1 class="m-0 text-primary">Makaan</h1>
-                </a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Property</a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <a href="property-list.html" class="dropdown-item">Property List</a>
-                                <a href="property-type.html" class="dropdown-item">Property Type</a>
-                                <a href="property-agent.html" class="dropdown-item">Property Agent</a>
-                            </div>
-                        </div>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu rounded-0 m-0">
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="404.html" class="dropdown-item">404 Error</a>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                    <a href="" class="btn btn-primary px-3 d-none d-lg-flex">Add Property</a>
                 </div>
-            </nav>
+                
+                <a href="contact.html" class="nav-item nav-link">Contato</a>
+            </div>
+            <a href="" class="btn btn-primary px-3 d-none d-lg-flex">Adicionar Imóvel</a>
         </div>
-        <!-- Navbar End -->
+    </nav>
+</div>
+<!-- Navbar End -->
+
+        
 
 
-        <!-- Header Start -->
-        <div class="container-fluid header bg-white p-0">
-            <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
-                <div class="col-md-6 p-5 mt-lg-5">
-                    <h1 class="display-5 animated fadeIn mb-4">Find A <span class="text-primary">Perfect Home</span> To Live With Your Family</h1>
-                    <p class="animated fadeIn mb-4 pb-2">Vero elitr justo clita lorem. Ipsum dolor at sed stet
-                        sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                    <a href="" class="btn btn-primary py-3 px-5 me-3 animated fadeIn">Get Started</a>
+
+
+<!-- Header Start -->
+<div class="container-fluid header bg-white p-0">
+    <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+        <div class="col-md-6 p-5 mt-lg-5">
+            <h1 class="display-5 animated fadeIn mb-4">SP Imóveis 24 Horas – <span class="text-primary">Seu Sonho da Casa Própria Começa Aqui!</span></h1>
+            <p class="animated fadeIn mb-4 pb-2">
+                O SP Imóveis 24 Horas foi criado para transformar o sonho da casa própria em realidade! Nossa plataforma conecta você às melhores oportunidades do mercado, ajudando a encontrar seu imóvel ideal e facilitando a aprovação do crédito, sem burocracia.
+            </p>
+            <a href="#" class="btn btn-primary py-3 px-5 me-3 animated fadeIn">✅ Encontre seu imóvel agora!</a>
+            <a href="#" class="btn btn-outline-primary py-3 px-5 animated fadeIn">✅ Simule seu financiamento!</a>
+        </div>
+        <div class="col-md-6 animated fadeIn">
+            <div class="owl-carousel header-carousel">
+                <div class="owl-carousel-item">
+                    <img class="img-fluid" src="img/carousel-1.jpg" alt="">
                 </div>
-                <div class="col-md-6 animated fadeIn">
-                    <div class="owl-carousel header-carousel">
-                        <div class="owl-carousel-item">
-                            <img class="img-fluid" src="img/carousel-1.jpg" alt="">
-                        </div>
-                        <div class="owl-carousel-item">
-                            <img class="img-fluid" src="img/carousel-2.jpg" alt="">
-                        </div>
-                    </div>
+                <div class="owl-carousel-item">
+                    <img class="img-fluid" src="img/carousel-2.jpg" alt="">
                 </div>
             </div>
         </div>
-        <!-- Header End -->
+    </div>
+</div>
+<!-- Header End -->
 
 
-        <!-- Search Start -->
-        <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
-            <div class="container">
-                <div class="row g-2">
-                    <div class="col-md-10">
-                        <div class="row g-2">
-                            <div class="col-md-4">
-                                <input type="text" class="form-control border-0 py-3" placeholder="Search Keyword">
-                            </div>
-                            <div class="col-md-4">
-                                <select class="form-select border-0 py-3">
-                                    <option selected>Property Type</option>
-                                    <option value="1">Property Type 1</option>
-                                    <option value="2">Property Type 2</option>
-                                    <option value="3">Property Type 3</option>
-                                </select>
-                            </div>
-                            <div class="col-md-4">
-                                <select class="form-select border-0 py-3">
-                                    <option selected>Location</option>
-                                    <option value="1">Location 1</option>
-                                    <option value="2">Location 2</option>
-                                    <option value="3">Location 3</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <button class="btn btn-dark border-0 w-100 py-3">Search</button>
-                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Search Start -->
+<div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
+    <div class="container">
+        <div class="text-center mb-4">
+            <h2 class="text-white">🔍 Encontre Seu Imóvel Ideal com Facilidade</h2>
+            <p class="text-white">
+                Nosso motor de busca inteligente permite que você filtre imóveis conforme suas necessidades. Aqui, você encontra:
+                <br>🏡 <strong>Casas e apartamentos</strong> – Novos, usados, financiados ou na planta.
+                <br>📍 <strong>Localização perfeita</strong> – Encontre imóveis em bairros estratégicos.
+                <br>💰 <strong>Opções para todos os orçamentos</strong> – Do primeiro imóvel a investimentos.
+                <br>🚀 <strong>Negociação facilitada</strong> – Conectamos você com corretores e imobiliárias.
+            </p>
+        </div>
+        
+
+
+
+        <div class="container mx-auto p-6">
+            <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+                <h2 class="text-xl font-bold mb-4">Filter Buildings</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <select class="p-2 border rounded" id="locationFilter">
+                        <option value="">Location</option>
+                        <option>CENTRO</option>
+                        <option>Uptown</option>
+                        <option>Suburbs</option>
+                    </select>
+                    <select class="p-2 border rounded" id="roomFilter">
+                        <option value="">Room Type</option>
+                        <option>1 Room</option>
+                        <option>2 Rooms</option>
+                        <option>3 Rooms</option>
+                    </select>
+                    <select class="p-2 border rounded" id="priceFilter">
+                        <option value="">Price Range</option>
+                        <option>Under $200,000</option>
+                        <option>$200,000 - $500,000</option>
+                        <option>Above $500,000</option>
+                    </select>
+                    <button id="applyFilters" style="background-color: rgb(131,39,60);" class="text-white p-2 rounded hover:bg-[rgb(110,30,50)]">
+                        Apply Filters
+                    </button>
+                    
                 </div>
             </div>
         </div>
-        <!-- Search End -->
 
 
-        <!-- Category Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Property Types</h1>
-                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/icon-apartment.png" alt="Icon">
-                                </div>
-                                <h6>Apartment</h6>
-                                <span>123 Properties</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/icon-villa.png" alt="Icon">
-                                </div>
-                                <h6>Villa</h6>
-                                <span>123 Properties</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/icon-house.png" alt="Icon">
-                                </div>
-                                <h6>Home</h6>
-                                <span>123 Properties</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/icon-housing.png" alt="Icon">
-                                </div>
-                                <h6>Office</h6>
-                                <span>123 Properties</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/icon-building.png" alt="Icon">
-                                </div>
-                                <h6>Building</h6>
-                                <span>123 Properties</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/icon-neighborhood.png" alt="Icon">
-                                </div>
-                                <h6>Townhouse</h6>
-                                <span>123 Properties</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/icon-condominium.png" alt="Icon">
-                                </div>
-                                <h6>Shop</h6>
-                                <span>123 Properties</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/icon-luxury.png" alt="Icon">
-                                </div>
-                                <h6>Garage</h6>
-                                <span>123 Properties</span>
-                            </div>
-                        </a>
+
+
+
+
+    </div>
+</div>
+<!-- Search End -->
+
+
+
+
+    <!-- Main Buildings Page -->
+    <div id="buildingsPage" class="block">
+        <!-- Filter Section -->
+       
+
+        <!-- Buildings Grid -->
+        <div class="container mx-auto p-6">
+            <div id="buildingsGrid" class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <!-- Buildings will be dynamically inserted here -->
+            </div>
+
+            <!-- Pagination -->
+            <div id="pagination" class="flex justify-center mt-8 space-x-2">
+                <!-- Pagination buttons will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+
+ <!-- Building Details Page (Initially Hidden) -->
+ <div id="buildingDetails" class="hidden">
+    <div class="container mx-auto p-6">
+        <button id="backButton" class="mb-4 flex items-center text-blue-600 hover:text-blue-800">
+            <span class="mr-2">←</span> Back to Buildings
+        </button>
+        
+        <div class="bg-white rounded-lg shadow-lg p-6">
+            <h1 id="buildingTitle" class="text-3xl font-bold mb-6"></h1>
+            
+            <!-- Building Images Slider -->
+            <div class="mb-8">
+                <div class="relative">
+                    <div id="buildingImages" class="flex overflow-hidden">
+                        <!-- Building images will be dynamically inserted here -->
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Category End -->
 
+            <!-- Building Features -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div>
+                    <h2 class="text-xl font-bold mb-4">Building Features</h2>
+                    <ul id="buildingFeatures" class="space-y-2">
+                        <!-- Features will be dynamically inserted here -->
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-xl font-bold mb-4">Location Details</h2>
+                    <ul id="locationDetails" class="space-y-2">
+                        <!-- Location details will be dynamically inserted here -->
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Available Units -->
+            <h2 class="text-2xl font-bold mb-4">Available Units</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Standard Room Types (Same for all buildings) -->
+                <div class="border rounded-lg p-4">
+                    <h3 class="font-bold mb-2">1 Room Unit</h3>
+                    <img src="/img/BUILDING1/1.jpg" alt="1 Room" class="w-full h-48 object-cover mb-4 rounded">
+                    <ul class="space-y-1 mb-4">
+                        <li>• 600 sq ft</li>
+                        <li>• Modern Kitchen</li>
+                        <li>• Living Room</li>
+                        <li>• 1 Bathroom</li>
+                    </ul>
+                    <p class="text-xl font-bold text-blue-600 mb-2" id="price1Room"></p>
+                    <button class="w-full bg-blue-600 text-white px-4 py-2 rounded">
+                        Book Viewing
+                    </button>
+                </div>
+
+                <div class="border rounded-lg p-4">
+                    <h3 class="font-bold mb-2">2 Room Unit</h3>
+                    <img src="/img/BUILDING1/2.jpg" alt="2 Rooms" class="w-full h-48 object-cover mb-4 rounded">
+                    <ul class="space-y-1 mb-4">
+                        <li>• 900 sq ft</li>
+                        <li>• Modern Kitchen</li>
+                        <li>• Living Room</li>
+                        <li>• 2 Bathrooms</li>
+                    </ul>
+                    <p class="text-xl font-bold text-blue-600 mb-2" id="price2Room"></p>
+                    <button class="w-full bg-blue-600 text-white px-4 py-2 rounded">
+                        Book Viewing
+                    </button>
+                </div>
+
+                <div class="border rounded-lg p-4">
+                    <h3 class="font-bold mb-2">3 Room Unit</h3>
+                    <img src="/img/BUILDING1/3.jpg" alt="3 Rooms" class="w-full h-48 object-cover mb-4 rounded">
+                    <ul class="space-y-1 mb-4">
+                        <li>• 1200 sq ft</li>
+                        <li>• Modern Kitchen</li>
+                        <li>• Living Room</li>
+                        <li>• 2 Bathrooms</li>
+                    </ul>
+                    <p class="text-xl font-bold text-blue-600 mb-2" id="price3Room"></p>
+                    <button class="w-full bg-blue-600 text-white px-4 py-2 rounded">
+                        Book Viewing
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+      
 
         <!-- About Start -->
         <div class="container-xxl py-5">
@@ -909,6 +972,445 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
+    <script>
+        // Configuration
+        const BUILDINGS_PER_PAGE = 8;
+        let currentPage = 1;
+        let currentFilters = {
+            location: '',
+            roomType: '',
+            priceRange: ''
+        };
+
+         // Sample data structure for buildings
+         const buildingsData = [
+            {
+                id: 1,
+                name: "Ar. Que Cury",
+                location: "CENTRO",
+                mainImage: "/img/BUILDING1/BULIDING1.jpg",
+                buildingImages: [
+                    "/img/BUILDING1/BULIDING1.jpg",
+                    "/img/BUILDING1/BUILDING2.jpg",
+                    "/img/BUILDING1/BULIDING1.jpg"
+                ],
+                features: [
+                    "24/7 Security",
+                    "Underground Parking",
+                    "Fitness Center",
+                    "Rooftop Garden",
+                    "Swimming Pool"
+                ],
+                locationDetails: [
+                    "Downtown Area",
+                    "Near Public Transit",
+                    "Shopping Centers Nearby",
+                    "Parks Within Walking Distance"
+                ],
+                prices: {
+                    oneRoom: "$100",
+                    twoRoom: "$350,000",
+                    threeRoom: "$500,000"
+                }
+            },
+
+            {
+                id: 2,
+                name: "Sky",
+                location: "Down",
+                mainImage: "about.jpg",
+                buildingImages: [
+                    "about.jpg",
+                    "about.jpg",
+                    "about.jpg"
+                ],
+                features: [
+                    "24/7 Security",
+                    "Underground Parking",
+                    "Fitness Center",
+                    "Rooftop Garden",
+                    "Swimming Pool"
+                ],
+                locationDetails: [
+                    "Down",
+                    "Near Public Transit",
+                    "Shopping Centers Nearby",
+                    "Parks Within Walking Distance"
+                ],
+                prices: {
+                    oneRoom: "$2",
+                    twoRoom: "$15",
+                    threeRoom: "$20"
+                }
+            },
+            {
+                id: 2,
+                name: "Sky",
+                location: "Down",
+                mainImage: "about.jpg",
+                buildingImages: [
+                    "about.jpg",
+                    "about.jpg",
+                    "about.jpg"
+                ],
+                features: [
+                    "24/7 Security",
+                    "Underground Parking",
+                    "Fitness Center",
+                    "Rooftop Garden",
+                    "Swimming Pool"
+                ],
+                locationDetails: [
+                    "Down",
+                    "Near Public Transit",
+                    "Shopping Centers Nearby",
+                    "Parks Within Walking Distance"
+                ],
+                prices: {
+                    oneRoom: "$3",
+                    twoRoom: "$15",
+                    threeRoom: "$20"
+                }
+            },
+            {
+                id: 2,
+                name: "Sky",
+                location: "Down",
+                mainImage: "about.jpg",
+                buildingImages: [
+                    "about.jpg",
+                    "about.jpg",
+                    "about.jpg"
+                ],
+                features: [
+                    "24/7 Security",
+                    "Underground Parking",
+                    "Fitness Center",
+                    "Rooftop Garden",
+                    "Swimming Pool"
+                ],
+                locationDetails: [
+                    "Down",
+                    "Near Public Transit",
+                    "Shopping Centers Nearby",
+                    "Parks Within Walking Distance"
+                ],
+                prices: {
+                    oneRoom: "$3",
+                    twoRoom: "$15",
+                    threeRoom: "$20"
+                }
+            }, {
+                id: 2,
+                name: "Sky",
+                location: "Down",
+                mainImage: "about.jpg",
+                buildingImages: [
+                    "about.jpg",
+                    "about.jpg",
+                    "about.jpg"
+                ],
+                features: [
+                    "24/7 Security",
+                    "Underground Parking",
+                    "Fitness Center",
+                    "Rooftop Garden",
+                    "Swimming Pool"
+                ],
+                locationDetails: [
+                    "Down",
+                    "Near Public Transit",
+                    "Shopping Centers Nearby",
+                    "Parks Within Walking Distance"
+                ],
+                prices: {
+                    oneRoom: "$3",
+                    twoRoom: "$15",
+                    threeRoom: "$20"
+                }
+            }, {
+                id: 2,
+                name: "Sky",
+                location: "Down",
+                mainImage: "about.jpg",
+                buildingImages: [
+                    "about.jpg",
+                    "about.jpg",
+                    "about.jpg"
+                ],
+                features: [
+                    "24/7 Security",
+                    "Underground Parking",
+                    "Fitness Center",
+                    "Rooftop Garden",
+                    "Swimming Pool"
+                ],
+                locationDetails: [
+                    "Down",
+                    "Near Public Transit",
+                    "Shopping Centers Nearby",
+                    "Parks Within Walking Distance"
+                ],
+                prices: {
+                    oneRoom: "$3",
+                    twoRoom: "$15",
+                    threeRoom: "$20"
+                }
+            }, {
+                id: 2,
+                name: "Sky",
+                location: "Down",
+                mainImage: "about.jpg",
+                buildingImages: [
+                    "about.jpg",
+                    "about.jpg",
+                    "about.jpg"
+                ],
+                features: [
+                    "24/7 Security",
+                    "Underground Parking",
+                    "Fitness Center",
+                    "Rooftop Garden",
+                    "Swimming Pool"
+                ],
+                locationDetails: [
+                    "Down",
+                    "Near Public Transit",
+                    "Shopping Centers Nearby",
+                    "Parks Within Walking Distance"
+                ],
+                prices: {
+                    oneRoom: "$3",
+                    twoRoom: "$15",
+                    threeRoom: "$20"
+                }
+            },
+            {
+                id: 2,
+                name: "Sky",
+                location: "Down",
+                mainImage: "about.jpg",
+                buildingImages: [
+                    "about.jpg",
+                    "about.jpg",
+                    "about.jpg"
+                ],
+                features: [
+                    "24/7 Security",
+                    "Underground Parking",
+                    "Fitness Center",
+                    "Rooftop Garden",
+                    "Swimming Pool"
+                ],
+                locationDetails: [
+                    "Down",
+                    "Near Public Transit",
+                    "Shopping Centers Nearby",
+                    "Parks Within Walking Distance"
+                ],
+                prices: {
+                    oneRoom: "$3",
+                    twoRoom: "$15",
+                    threeRoom: "$20"
+                }
+            },{
+                id: 2,
+                name: "Sky",
+                location: "Down",
+                mainImage: "about.jpg",
+                buildingImages: [
+                    "about.jpg",
+                    "about.jpg",
+                    "about.jpg"
+                ],
+                features: [
+                    "24/7 Security",
+                    "Underground Parking",
+                    "Fitness Center",
+                    "Rooftop Garden",
+                    "Swimming Pool"
+                ],
+                locationDetails: [
+                    "Down",
+                    "Near Public Transit",
+                    "Shopping Centers Nearby",
+                    "Parks Within Walking Distance"
+                ],
+                prices: {
+                    oneRoom: "$3",
+                    twoRoom: "$15",
+                    threeRoom: "$20"
+                }
+            },{
+                id: 2,
+                name: "Sky",
+                location: "Down",
+                mainImage: "about.jpg",
+                buildingImages: [
+                    "about.jpg",
+                    "about.jpg",
+                    "about.jpg"
+                ],
+                features: [
+                    "24/7 Security",
+                    "Underground Parking",
+                    "Fitness Center",
+                    "Rooftop Garden",
+                    "Swimming Pool"
+                ],
+                locationDetails: [
+                    "Down",
+                    "Near Public Transit",
+                    "Shopping Centers Nearby",
+                    "Parks Within Walking Distance"
+                ],
+                prices: {
+                    oneRoom: "$3",
+                    twoRoom: "$15",
+                    threeRoom: "$20"
+                }
+            },
+            // More buildings would be added here
+        ];
+
+        // Filter buildings based on selected criteria
+        function filterBuildings() {
+            return buildingsData.filter(building => {
+                const locationMatch = !currentFilters.location || 
+                    building.location === currentFilters.location;
+
+                const priceMatch = !currentFilters.priceRange || (() => {
+                    const price = parseInt(building.prices.oneRoom.replace(/\D/g, ''));
+                    switch(currentFilters.priceRange) {
+                        case 'Under $200,000':
+                            return price < 200000;
+                        case '$200,000 - $500,000':
+                            return price >= 200000 && price <= 500000;
+                        case 'Above $500,000':
+                            return price > 500000;
+                        default:
+                            return true;
+                    }
+                })();
+
+                const roomMatch = !currentFilters.roomType || (() => {
+                    switch(currentFilters.roomType) {
+                        case '1 Room':
+                            return building.prices.oneRoom;
+                        case '2 Rooms':
+                            return building.prices.twoRoom;
+                        case '3 Rooms':
+                            return building.prices.threeRoom;
+                        default:
+                            return true;
+                    }
+                })();
+
+                return locationMatch && priceMatch && roomMatch;
+            });
+        }
+
+        // Get current page buildings
+        function getCurrentPageBuildings() {
+            const filteredBuildings = filterBuildings();
+            const startIndex = (currentPage - 1) * BUILDINGS_PER_PAGE;
+            return filteredBuildings.slice(startIndex, startIndex + BUILDINGS_PER_PAGE);
+        }
+
+        // Create building cards
+        function createBuildingCards() {
+            const grid = document.getElementById('buildingsGrid');
+            grid.innerHTML = '';
+
+            const currentBuildings = getCurrentPageBuildings();
+            
+            currentBuildings.forEach(building => {
+                const card = document.createElement('div');
+                card.className = 'building-card cursor-pointer bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow';
+                card.setAttribute('data-building-id', building.id);
+                card.innerHTML = `
+                    <img src="${building.mainImage}" alt="${building.name}" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-2">${building.name}</h3>
+                        <p class="text-gray-600">${building.location}</p>
+                        <p class="text-[rgb(131,39,60)] font-bold mt-2">Starting from ${building.prices.oneRoom}</p>
+                    </div>
+                `;
+                card.addEventListener('click', () => showBuildingDetails(building));
+                grid.appendChild(card);
+            });
+ // Back button functionality
+ document.getElementById('backButton').addEventListener('click', () => {
+            document.getElementById('buildingDetails').classList.add('hidden');
+            document.getElementById('buildingsPage').classList.remove('hidden');
+        });
+
+            updatePagination();
+        }
+
+        // Update pagination buttons
+        function updatePagination() {
+            const paginationContainer = document.getElementById('pagination');
+            paginationContainer.innerHTML = '';
+
+            const filteredBuildings = filterBuildings();
+            const totalPages = Math.ceil(filteredBuildings.length / BUILDINGS_PER_PAGE);
+
+            for (let i = 1; i <= totalPages; i++) {
+                const button = document.createElement('button');
+                button.className = `px-4 py-2 border rounded ${
+                    currentPage === i ? 'bg-blue-600 text-white' : 'bg-white hover:bg-gray-100'
+                }`;
+                button.textContent = i;
+                button.addEventListener('click', () => {
+                    currentPage = i;
+                    createBuildingCards();
+                });
+                paginationContainer.appendChild(button);
+            }
+        }
+
+        // Handle filter changes
+        function handleFilterChange() {
+            currentFilters = {
+                location: document.getElementById('locationFilter').value,
+                roomType: document.getElementById('roomFilter').value,
+                priceRange: document.getElementById('priceFilter').value
+            };
+            currentPage = 1; // Reset to first page
+            createBuildingCards();
+        }
+
+        // Event listeners
+        document.getElementById('applyFilters').addEventListener('click', handleFilterChange);
+
+        // Initialize the page
+        createBuildingCards();
+
+        // Your existing showBuildingDetails function remains the same
+        function showBuildingDetails(building) {
+            document.getElementById('buildingsPage').classList.add('hidden');
+            document.getElementById('buildingDetails').classList.remove('hidden');
+
+            document.getElementById('buildingTitle').textContent = building.name;
+            document.getElementById('price1Room').textContent = building.prices.oneRoom;
+            document.getElementById('price2Room').textContent = building.prices.twoRoom;
+            document.getElementById('price3Room').textContent = building.prices.threeRoom;
+
+            const featuresUl = document.getElementById('buildingFeatures');
+            featuresUl.innerHTML = building.features.map(feature => `<li>• ${feature}</li>`).join('');
+
+            const locationUl = document.getElementById('locationDetails');
+            locationUl.innerHTML = building.locationDetails.map(detail => `<li>• ${detail}</li>`).join('');
+
+            const imagesContainer = document.getElementById('buildingImages');
+            imagesContainer.innerHTML = building.buildingImages.map(image => 
+                `<img src="${image}" alt="Building Image" class="w-full h-64 object-cover rounded">`
+            ).join('');
+        }
+    </script>
+
 </body>
 
 </html>
