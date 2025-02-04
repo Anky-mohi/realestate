@@ -84,66 +84,72 @@
 
 
 
-
-
-
-<!-- Header Start -->
-<!-- Header Start -->
-<!-- Header Start -->
-<div class="container-fluid header bg-white p-0">
-    <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
-        <!-- Filter Section (Left Side) -->
-        <div class="col-md-6 p-5 mt-lg-5">
-            <div class="bg-white rounded-lg shadow-lg p-5" style="min-height: 180px;">
-                <h2 class="text-xl font-bold mb-3">Mude sua forma
-                    de comprar imóveis</h2>
-                <div class="d-flex flex-wrap gap-3">
-                    <select class="form-select w-100 w-md-auto" id="locationFilter">
-                        <option value="">Onde você quer morar ?</option>
-                        <option>CENTRO</option>
-                        <option>Uptown</option>
-                        <option>Suburbs</option>
-                    </select>
-                    <select class="form-select w-100 w-md-auto" id="roomFilter">
-                        <option value="">
-                            Quartos
-                            </option>
-                        <option>1 Room</option>
-                        <option>2 Rooms</option>
-                        <option>3 Rooms</option>
-                    </select>
-                    <select class="form-select w-100 w-md-auto" id="priceFilter">
-                        <option value="">
-                            Valor até
-                            </option>
-                        <option>Under $200,000</option>
-                        <option>$200,000 - $500,000</option>
-                        <option>Above $500,000</option>
-                    </select>
-                    <button id="applyFilters" style="background-color: rgb(131,39,60);" 
-                        class="btn text-white w-100 w-md-auto">
-                        Apply Filters
-                    </button>
+        <div class="container-fluid header bg-white p-0">
+            <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
+                <!-- Filter Section (Left Side) -->
+                <div class="col-md-6 p-5 mt-lg-5">
+                    <div class="bg-white rounded-lg shadow-lg p-5 w-100" style="min-height: 180px;">
+                        <h2 class="text-xl font-bold mb-3 text-center text-md-start">Mude sua forma
+                            de comprar imóveis</h2>
+                        <div class="d-flex flex-wrap gap-3">
+                            <select class="form-select w-100 w-md-auto" id="locationFilter">
+                                <option value="">Onde você quer morar ?</option>
+                                <option>CENTRO</option>
+                                <option>Uptown</option>
+                                <option>Suburbs</option>
+                            </select>
+                            <select class="form-select w-100 w-md-auto" id="roomFilter">
+                                <option value="">Quartos</option>
+                                <option>1 Room</option>
+                                <option>2 Rooms</option>
+                                <option>3 Rooms</option>
+                            </select>
+                            <select class="form-select w-100 w-md-auto" id="priceFilter">
+                                <option value="">Valor até</option>
+                                <option>Under $200,000</option>
+                                <option>$200,000 - $500,000</option>
+                                <option>Above $500,000</option>
+                            </select>
+                            <button id="applyFilters" style="background-color: rgb(131,39,60);" 
+                                class="btn text-white w-100 w-md-auto">
+                                Apply Filters
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Image Carousel (Right Side) -->
+                <div class="col-md-6 animated fadeIn">
+                    <div class="owl-carousel header-carousel">
+                        <div class="owl-carousel-item">
+                            <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                        </div>
+                        <div class="owl-carousel-item">
+                            <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        
+        <style>
+            /* Make filter section full width on mobile */
+            @media (max-width: 768px) {
+                .col-md-6.p-5 {
+                    padding: 0 !important;
+                }
+                .bg-white.rounded-lg.shadow-lg.p-5 {
+                    border-radius: 0 !important; /* Remove rounded corners */
+                    box-shadow: none !important; /* Remove shadow */
+                }
+            }
+        </style>
+        
 
-        <!-- Image Carousel (Right Side) -->
-        <div class="col-md-6 animated fadeIn">
-            <div class="owl-carousel header-carousel">
-                <div class="owl-carousel-item">
-                    <img class="img-fluid" src="img/carousel-1.jpg" alt="">
-                </div>
-                <div class="owl-carousel-item">
-                    <img class="img-fluid" src="img/carousel-2.jpg" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Header End -->
 
-<!-- Header End -->
+<!-- Header Start -->
+
+
 
 
         <!-- Main Buildings Page -->
